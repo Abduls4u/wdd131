@@ -1,0 +1,19 @@
+@media (min-width: 768px) {
+  #hamburger {
+    display: none; /* hide hamburger on larger screens */
+  }
+
+  nav {
+    display: flex !important; /* show nav */
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .album {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  header {
+    flex-direction: row;
+  }
+}
