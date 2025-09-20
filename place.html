@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="WDD 131 - Dynamic Web Fundamentals | Abdulsalam Abdulsomad .A. | ">
+        <meta name="author" content="Abdulsalam Abdulsomad .A.">
+        <title> Nigeria </title>
+        <link rel="stylesheet" href="styles/place.css">
+        <script src="scripts/place.js" defer></script>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>Nigeria</h1>
+        </header>
+        <div class="hero">
+            <!-- Hero Image -->
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 700px)">
+                <img src="images/hero.webp" alt="Nigerian Culture">
+            </picture>
+
+            <section class="data">
+                <h2>Data</h2>
+                <ul>
+                    <li><strong>Area:</strong> 923,769 km²</li>
+                    <li><strong>Population:</strong> ~223 million</li>
+                    <li><strong>Language:</strong> English (official), Hausa, Yoruba, Igbo, and others</li>
+                    <li><strong>Currency:</strong> Naira (₦)</li>
+                    <li><strong>Capital:</strong> Abuja</li>
+                    <li><strong>Time Zone:</strong> UTC+1</li>
+                </ul>
+            </section>
+                <!-- Weather Section -->
+                <section class="weather">
+                <h2>Weather</h2>
+                <img src="images/weather.svg"  alt="Weather Icon" id="weather-icon">
+                <ul>
+                    <li><strong>Temperature:</strong> <span id="temp">28</span>°C</li>
+                    <li><strong>Condition:</strong> Partly Cloudy</li>
+                    <li><strong>Wind Speed:</strong> <span id="wind">12</span> km/h</li>
+                    <li><strong>Wind Chill:</strong> <span id="windchill">N/A</span></li>
+                </ul>
+            </section>
+        </div>
+        <footer>
+            <p>
+            &copy;<span id="year"></span> Nigeria Page | 🦁 Abdulsalam Abdulsomad .A. 🦁 Nigeria
+            </p>
+            <p id="lastModified"></p>
+        </footer>
+    </body>
+</html>
