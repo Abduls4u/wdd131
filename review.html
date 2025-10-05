@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals | Abdulsalam Abdulsomad .A. | Product Review Form">
+    <meta name="author" content="Abdulsalam Abdulsomad .A.">
+
+    <script src="scripts/date.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Confirmation</title>
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+    <header>
+        <h1>Thank You for Your Review!</h1>
+    </header>
+
+    <main>
+        <p>Your product review has been submitted successfully.</p>
+        <p id="reviewCount"></p>
+        <a href="form.html">Submit Another Review</a>
+    </main>
+
+    <footer>
+            <p>
+                &copy;<span id="year"></span> 🦁 Abdulsalam Abdulsomad .A. 🦁 Nigeria
+            </p>
+            <p id="lastModified"></p>
+    </footer>
+
+    <script>
+        // Counter using localStorage
+        let count = localStorage.getItem('reviewCount') || 0;
+        count++;
+        localStorage.setItem('reviewCount', count);
+        document.getElementById('reviewCount').textContent =
+            `You have submitted ${count} review${count > 1 ? 's' : ''}.`;
+    </script>
+</body>
+</html>

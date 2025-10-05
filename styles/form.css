@@ -1,0 +1,70 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f7fb;
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  background-color: #3b003b;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+}
+
+form {
+  background-color: #e6ddeb;
+  padding: 1.5em;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+}
+
+label, legend {
+  display: block;
+  margin-top: 1em;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.5em;
+  margin-top: 0.3em;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+fieldset {
+  border: none;
+  margin-top: 1em;
+}
+
+input[type="submit"] {
+  margin-top: 1.5em;
+  width: 100%;
+  background-color: #3b003b;
+  color: white;
+  border: none;
+  padding: 0.7em;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #5c007a;
+}
+
+@media (max-width: 600px) {
+  form {
+    width: 90%;
+  }
+}
