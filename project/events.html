@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>The Golden Café — Events</title>
+    <meta name="description" content="Events and bookings for The Golden Café" />
+    <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-grid">
+            <div>
+                <h1 class="brand">The Golden Café</h1>
+                <p class="tag">Community • Coffee • Comfort</p>
+            </div>
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="events.html">Events</a>
+                <a href="references.html">References</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2>Upcoming Events</h2>
+        <section id="events-list" class="cards-grid" aria-live="polite"></section>
+
+        <aside class="card booking-card">
+            <h3>Book a Spot</h3>
+            <form id="booking-form">
+                <label for="event-select">Event</label>
+                <select id="event-select" required></select>
+
+                <label for="attendee">Your name</label>
+                <input id="attendee" name="attendee" required />
+
+                <label for="tickets">Number of seats</label>
+                <input id="tickets" name="tickets" type="number" min="1" max="10" value="1" required />
+
+                <button type="submit">Reserve</button>
+            </form>
+            <div id="booking-confirm" class="hidden" role="status"></div>
+        </aside>
+
+        <section class="faq card">
+            <h3>Event Policies</h3>
+            <p>Reservations are held for 15 minutes after start. Cancellation notice requested 24 hours prior.</p>
+        </section>
+        <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <p>
+            &copy;<span id="year"></span> The Golden Café 🦁 Abdulsalam Abdulsomad .A. 🦁 Nigeria
+            </p>
+            <p id="lastModified"></p>
+                <p>Open: Mon–Sun 7:00 AM – 9:00 PM</p>
+            </div>
+            <div>
+                <p><a href="references.html">References & Image Credits</a></p>
+            </div>
+            
+        </div>
+        
+    </footer>
+
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    </main>
+</body>
+</html>

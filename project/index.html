@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>The Golden Café — Home</title>
+    <meta name="description" content="The Golden Café — local coffee shop, menu, events and contact" />
+    <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-grid">
+            <div>
+                <h1 class="brand">The Golden Café</h1>
+            </div>
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="events.html">Events</a>
+                <a href="references.html">References</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero card soft-shadow">
+            <div class="hero-text">
+                <h2>Welcome to <span class="accent">The Golden Café</span></h2>
+                <p>Where good coffee meets warm conversation. Join us for handcrafted drinks, fresh pastries, and regular community events.</p>
+                <a class="btn" href="menu.html">See our Menu</a>
+            </div>
+            <figure class="hero-image">
+                <img src="images/coffe.jpeg" alt="Interior of The Golden Café with wooden tables and warm lighting" loading="lazy" width="800" height="533">
+                <figcaption class="visually-hidden">The Golden Café interior</figcaption>
+            </figure>
+        </section>
+
+
+                <section class="featured">
+                <h3>Featured Picks</h3>
+                <div id="featured-card" class="card featured-card" aria-live="polite"></div>
+                <div class="featured-controls">
+                <button id="prev-feature" aria-label="Previous feature">◀</button>
+                <button id="next-feature" aria-label="Next feature">▶</button>
+            </div>
+        </section>
+        <section class="gallery">
+            <h3>Photo Gallery</h3>
+            <div class="card-img-row">
+                <img src="images/seatingArea.jpeg" alt="Café seating area" loading="lazy" />
+                <img src="images/latteArt.jpeg" alt="Latte art" loading="lazy" />
+                <img src="images/assortedPastries.jpeg" alt="Assorted pastries" loading="lazy" />
+            </div>
+        </section>
+
+        <section class="testimonials card soft-shadow">
+            <h3>Customer Testimonials</h3>
+            <ul id="testimonials-list" class="test-list"></ul>
+            <form id="testimonial-form" class="testimonial-form" aria-label="Add a testimonial">
+                <label for="t-name">Your name</label>
+                <input id="t-name" name="t-name" required />
+                <label for="t-note">Your review</label>
+                <textarea id="t-note" name="t-note" required></textarea>
+                <button type="submit">Add Testimonial</button>
+            </form>
+        </section>
+
+        <section class="contact-quick card">
+            <h3>Contact Us</h3>
+            <form id="contact-form" aria-label="Contact form">
+                <label for="name">Name</label>
+                <input id="name" name="name" required />
+
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required />
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+            <p id="contact-confirm" class="hidden" role="status"></p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <p>
+            &copy;<span id="year"></span> The Golden Café 🦁 Abdulsalam Abdulsomad .A. 🦁 Nigeria
+            </p>
+            <p id="lastModified"></p>
+                <p>Open: Mon–Sun 7:00 AM – 9:00 PM</p>
+            </div>
+            <div>
+                <p><a href="references.html">References & Image Credits</a></p>
+            </div>
+            
+        </div>
+        
+    </footer>
+
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+</body>
+</html>
